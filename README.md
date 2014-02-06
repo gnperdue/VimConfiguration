@@ -12,11 +12,7 @@ shell scripts, then I added pathogen.vim. It is included from:
 I created a `vim/autoload` directory at the top-level and added a script to check out 
 pathogen. Then I added these to the Git repository.
 
-
-In this case, I have simply copied the latest version into vim/autoload and 
-manually created vim/bundle and added the content to the repository. 
-
-Then, I went to vim/bundle and added submodules. In the top level:
+Next I manually created `vim/bundle` and added submodules. In the top level:
 
 * git submodule add git://github.com/klen/python-mode.git vim/bundle/python-mode
 * git submodule add git://github.com/scrooloose/syntastic.git vim/bundle/syntastic
