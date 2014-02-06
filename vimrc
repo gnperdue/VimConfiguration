@@ -1,4 +1,4 @@
-echom "Welcome to the desert of the real."
+" echom "Welcome to the desert of the real."
 " Some debugging notes:
 "  Check called scripts with   -  :scriptnames
 "  Check buffer syntax with    -  :setlocal syntax?
