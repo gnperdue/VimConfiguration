@@ -4,8 +4,9 @@ Initial Set-up
 Right now this is more of a "log of how I set this up" rather than a 
 proper "readme" for users who check this module out to play with.
 
-First, I created a new repository on GitHub and checked in vimrc and the supporting
-shell scripts, then I added pathogen.vim. It is included from:
+First, build vim 7.4 with python3 support. Then, after that I created a new repository 
+on GitHub and checked in vimrc and the supporting shell scripts, then I added pathogen.vim. 
+It is included from:
 
 * https://github.com/tpope/vim-pathogen
 
