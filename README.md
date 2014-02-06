@@ -4,15 +4,21 @@ Initial Set-up
 Right now this is more of a "log of how I set this up" rather than a 
 proper "readme" for users who check this module out to play with.
 
-First, we need to get a copy of pathogen.vim. It is included here from
+First, I created a new repository on GitHub and checked in vimrc and the supporting
+shell scripts, then I added pathogen.vim. It is included from:
 
 * https://github.com/tpope/vim-pathogen
 
-In this case, I have simply copied the latest version
-into vim/autoload and manually created vim/bundle. Then, I went to vim/bundle
-and added submodules. In the top level:
+I created a `vim/autoload` directory at the top-level and added a script to check out 
+pathogen. Then I added these to the Git repository.
 
-* git submodule add git://github.com/klen/python-mode.git vim/bindle/python-mode
+
+In this case, I have simply copied the latest version into vim/autoload and 
+manually created vim/bundle and added the content to the repository. 
+
+Then, I went to vim/bundle and added submodules. In the top level:
+
+* git submodule add git://github.com/klen/python-mode.git vim/bundle/python-mode
 * git submodule add git://github.com/scrooloose/syntastic.git vim/bundle/syntastic
 * git submodule add git://github.com/tomtom/tlib_vim.git vim/bundle/tlib_vim
 * git submodule add git://github.com/MarcWeber/vim-addon-mw-utils.git vim/bundle/vim-addon-mw-utils
