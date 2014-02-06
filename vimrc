@@ -242,7 +242,7 @@ augroup END
 " syntastic
 let g:syntastic_python_checkers=['flake8']
 " let g:syntastic_cpp_compiler = 'g++-4.2'
-let g:syntastic_cpp_checkers=['cpplint','gcc']
+let g:syntastic_cpp_checkers=['cpplint','cppcheck','gcc']
 
 " just to keep things tidy...
 noh
