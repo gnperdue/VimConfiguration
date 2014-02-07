@@ -15,7 +15,12 @@ execute pathogen#infect()
 call pathogen#incubate()
 call pathogen#helptags()
 
+" light only
+" colorscheme default
+" colorscheme delek
+" dark only
 colorscheme evening
+colorscheme solarized
 
 " Use when displaying bad whitespace
 highlight BadWhitespace ctermbg=gray
