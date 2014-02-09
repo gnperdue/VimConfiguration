@@ -79,7 +79,8 @@ the toplevel VimConfig) `git add <submodule>` and `git commit` to point at the n
 chnageset.
 
 Later, we may freely `git checkout master`, then `git merge new_branch`, and 
-`git push origin master`.
+`git push origin master`. Then, to clean up (if it was just a temp branch), use
+`git branch -D <branch name>` and `git push origin --delete <branchname>`.
 
 Other Usage Notes
 -----------------
