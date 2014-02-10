@@ -21,6 +21,7 @@ call pathogen#helptags()
 " dark only
 colorscheme evening
 colorscheme solarized
+" colorscheme molokai
 
 " Use when displaying bad whitespace
 highlight BadWhitespace ctermbg=gray
@@ -213,6 +214,12 @@ augroup filetype_cpp
   " Make trailing whitespace be flagged as bad in Python
   " autocmd BufWinEnter *.cpp,*.cxx,*.h match BadWhitespace /\s\+$/
 augroup END
+
+augroup filetype_asciidoc
+  autocmd!
+  autocmd FileType asciidoc colorscheme molokai
+augroup END
+
 
 
 """""""""""""""""""""""""""""
