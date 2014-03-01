@@ -81,6 +81,10 @@ set backspace=indent,eol,start
 " nnoremap <Up> :set number!<cr>
 " nnoremap <Down> Oj
 
+" set the leader (and local leader?) for more complex mappings
+let mapleader="-"
+" let maplocalleader="-"
+
 nnoremap <Up> ddkP
 nnoremap <Down> ddp
 nnoremap <Left> :bp<cr>  
@@ -91,10 +95,7 @@ inoremap <c-d> <esc>ddi
 inoremap <c-u> <esc>viwUea
 nnoremap <c-u> viwUe
 inoremap jk <esc> 
-
-" set the leader (and local leader?) for more complex mappings
-let mapleader="-"
-" let maplocalleader="-"
+inoremap <leader>zz <esc>zzi
 
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
