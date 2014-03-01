@@ -95,7 +95,7 @@ inoremap <c-d> <esc>ddi
 inoremap <c-u> <esc>viwUea
 nnoremap <c-u> viwUe
 inoremap jk <esc> 
-inoremap <leader>zz <esc>zzi
+inoremap <leader>zz <esc>zza
 
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
