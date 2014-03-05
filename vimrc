@@ -96,6 +96,8 @@ inoremap <c-u> <esc>viwUea
 nnoremap <c-u> viwUe
 inoremap jk <esc> 
 inoremap <leader>zz <esc>zza
+inoremap <leader>zt <esc>zta
+inoremap <leader>zb <esc>zba
 
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
@@ -196,7 +198,8 @@ augroup END
 "  Assume python-mode (:help pymode.txt)
 augroup filetype_python
   autocmd!
-  let g:pymode_python = 'python3'
+  " nnoremap <leader>p3 :execute "let g:pymode_python = 'python3'"<cr>
+  " let g:pymode_python = 'python3'
   " most of this is handled by python-mode...
   " autocmd FileType python setlocal tabstop=4
   " autocmd FileType python setlocal softtabstop=4
