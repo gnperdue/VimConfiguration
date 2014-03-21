@@ -78,6 +78,9 @@ one more `git checkout master` is sometimes useful (?). Then, we simply run (in
 the toplevel VimConfig) `git add <submodule>` and `git commit` to point at the new 
 chnageset.
 
+Actually, a better way to update appears to be to do `git checkout SHA1` for the commit
+you want to move to, then commit that from the top level.
+
 Later, we may freely `git checkout master`, then `git merge new_branch`, and 
 `git push origin master`. Then, to clean up (if it was just a temp branch), use
 `git branch -D <branch name>` and `git push origin --delete <branchname>`.
