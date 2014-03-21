@@ -37,6 +37,17 @@ Then, run `git submodule sync`. But, `git remote -v` still points to the old sub
 If I push those changes and then re-check out the enitre VimConfig module, the remote 
 repository is correct. But this is sort of a painful way to swap a submodule.
 
+Python Update
+-------------
+
+I recently changed to Python 2 for my primary Python (Py 3 support is too spotty for 
+machines I work and colleagues I work with). In order to get this to work, I made 
+several attempts, and what ended up working involved two simultaneous changes. First,
+I built vim with `--enable-pythoninter=yes` rather than `=dynamic` and I also re-checked
+out `python-mode` with Python 2 first in my `$PATH`. The second step was definitely 
+needed but it isn't clear the first step was. The first step by itself was not sufficient,
+but it isn't clear if both were required.
+
 Dealing with Changes to Submodules
 ----------------------------------
 
