@@ -192,6 +192,7 @@ au BufRead,BufNewFile Makefile* set noexpandtab
 augroup filetype_html
   autocmd!
   autocmd FileType html nnoremap <buff> <localleader>f Vatzf
+  let g:html_indent_inctags = "html,body,head,tbody"
 augroup END
 
 " Python
