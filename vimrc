@@ -257,9 +257,12 @@ augroup END
 
 """""""""""""""""""""""""""""
 " syntastic
-let g:syntastic_python_checkers=['flake8']
+" Python handled by python-mode, no?
+" let g:syntastic_python_checkers=['flake8']
 " let g:syntastic_cpp_compiler = 'g++-4.2'
 let g:syntastic_cpp_checkers=['cpplint','cppcheck','gcc']
+" let g:syntastic_html_checkers=['jshint','tidy','validator','w3']
+let g:syntastic_html_checkers=['jshint']
 
 " just to keep things tidy...
 noh
