@@ -23,6 +23,9 @@ Next I manually created `vim/bundle` and added submodules. In the top level:
 * git submodule add git://github.com/tpope/vim-commentary.git vim/bundle/vim-commentary
 * git submodule add git://github.com/garbas/vim-snipmate.git vim/bundle/vim-snipmate
 * git submodule add git://github.com/gnperdue/vim-snippets.git vim/bundle/vim-snippets
+* git submodule add git://github.com/wookiehangover/jshint.vim.git vim/bundle/jshint.vim
+* git submodule add git://github.com/jelera/vim-javascript-syntax vim/bundle/vim-javascript-syntax
+
 
 Note, when checking this module out, the submodules will initially be empty (the 
 directories will be present, but they will hold no content). To fill them, go to the 
