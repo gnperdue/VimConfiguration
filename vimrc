@@ -239,6 +239,8 @@ augroup END
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':'l')<cr>
 vnoremap <Space> zf
 
+" javascript with vim-javascript-syntax
+au FileType javascript call JavaScriptFold()
 
 """""""""""""""""""""""""""""
 " use this function and the one below to restore cursor position when restarting a session
