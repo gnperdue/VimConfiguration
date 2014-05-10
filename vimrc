@@ -231,7 +231,7 @@ augroup END
 augroup filetype_javascript
   autocmd!
   autocmd FileType javascript colorscheme vividchalk
-  autocmd FileType javascript noremap <buffer>  <leader>j :call JsBeautify()<cr>
+  autocmd FileType javascript noremap <buffer>  <c-j> :call JsBeautify()<cr>
 augroup END
 
 
