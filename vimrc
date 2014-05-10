@@ -19,9 +19,9 @@ call pathogen#helptags()
 " colorscheme default
 " colorscheme delek
 " dark only
-colorscheme evening
-colorscheme solarized
-" colorscheme molokai
+" colorscheme evening
+" colorscheme solarized
+colorscheme af
 
 " Use when displaying bad whitespace
 highlight BadWhitespace ctermbg=gray
@@ -193,6 +193,7 @@ augroup filetype_html
   autocmd!
   autocmd FileType html nnoremap <buff> <localleader>f Vatzf
   let g:html_indent_inctags = "html,body,head,tbody"
+  autocmd FileType html colorscheme af
 augroup END
 
 " Python
@@ -212,12 +213,14 @@ augroup filetype_python
   " autocmd FileType python match BadWhitespace /\s\+$/
   " Wrap after 79 characters - needed? isn't clear what python-mode does...
   autocmd FileType python setlocal textwidth=79
+  autocmd FileType python colorscheme anotherdark
 augroup END
 
 augroup filetype_cpp
   autocmd!
   " Make trailing whitespace be flagged as bad in Python
   " autocmd BufWinEnter *.cpp,*.cxx,*.h match BadWhitespace /\s\+$/
+  autocmd FileType cpp colorscheme twilight
 augroup END
 
 augroup filetype_asciidoc
@@ -225,6 +228,10 @@ augroup filetype_asciidoc
   autocmd FileType asciidoc colorscheme molokai
 augroup END
 
+augroup filetype_javascript
+  autocmd!
+  autocmd FileType javascript colorscheme vividchalk
+augroup END
 
 
 """""""""""""""""""""""""""""
