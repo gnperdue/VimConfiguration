@@ -25,14 +25,13 @@ Next I manually created `vim/bundle` and added submodules. In the top level:
 * git submodule add git://github.com/gnperdue/vim-snippets.git vim/bundle/vim-snippets
 * git submodule add git://github.com/wookiehangover/jshint.vim.git vim/bundle/jshint.vim
 * git submodule add git://github.com/jelera/vim-javascript-syntax vim/bundle/vim-javascript-syntax
-
+* git submodule add git://github.com/maksimr/vim-jsbeautify vim/bundle/vim-jsbeautify
 
 Note, when checking this module out, the submodules will initially be empty (the 
 directories will be present, but they will hold no content). To fill them, go to the 
 top level:
 
-* git submodule init
-* git submodule update
+* git submodule update --init --recursive
 
 Attempt to change a submodule url: First, clean out the submodule. Then, edit the .gitmodules
 file to use the new url. Then run `git submodule sync`. Then run `git submodule init`. 
