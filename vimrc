@@ -98,6 +98,7 @@ inoremap jk <esc>
 inoremap <leader>zz <esc>zza
 inoremap <leader>zt <esc>zta
 inoremap <leader>zb <esc>zba
+inoremap <leader>jj <esc>:call JsBeautify()<cr>a
 
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
