@@ -215,6 +215,7 @@ augroup filetype_python
   " Wrap after 79 characters - needed? isn't clear what python-mode does...
   autocmd FileType python setlocal textwidth=79
   autocmd FileType python colorscheme anotherdark
+  let g:pymode_rope = 0
 augroup END
 
 augroup filetype_cpp
