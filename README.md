@@ -88,8 +88,8 @@ and then running `add` and `commit` in the supermodule to keep the pointers corr
 When updating a package we don't control, the appropriate method appears to be to 
 simply run `git pull origin master`, then `git checkout master`. Following up with 
 one more `git checkout master` is sometimes useful (?). Then, we simply run (in 
-the toplevel VimConfig) `git add <submodule>` and `git commit` to point at the new 
-chnageset.
+the toplevel VimConfiguration) `git add <submodule>` and `git commit` to point at the new 
+changeset.
 
 Actually, a better way to update appears to be to do `git checkout SHA1` for the commit
 you want to move to, then commit that from the top level.
