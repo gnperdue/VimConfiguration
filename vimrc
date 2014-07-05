@@ -189,6 +189,8 @@ au BufRead,BufNewFile Makefile* set noexpandtab
 """""""""""""""""""""""""""""
 " Autocmd groups
 
+autocmd BufRead,BufNewFile *.txt set filetype=markdown
+
 " HTML
 augroup filetype_html
   autocmd!
