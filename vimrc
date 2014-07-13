@@ -40,6 +40,8 @@ autocmd FileType erlang set commentstring=%\ %s
 autocmd FileType r set commentstring=#\ %s
 " AsciiDoc
 autocmd FileType asciidoc set commentstring=//\ %s
+" Markdown
+autocmd FileType markdown set commentstring=<!--\ %s-->
 
 
 " Use UNIX (\n) line endings.
