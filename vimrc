@@ -93,6 +93,8 @@ nnoremap <Up> ddkP
 nnoremap <Down> ddp
 nnoremap <Left> :bp<cr>  
 nnoremap <Right> :bn<cr>
+" indent plain text for markdown code font
+nnoremap <leader>pp 0j0i<tab><tab><esc>0  
 
 " mode specific mappings
 inoremap <c-d> <esc>ddi
