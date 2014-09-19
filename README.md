@@ -98,6 +98,19 @@ Later, we may freely `git checkout master`, then `git merge new_branch`, and
 `git push origin master`. Then, to clean up (if it was just a temp branch), use
 `git branch -D <branch name>` and `git push origin --delete <branchname>`.
 
+Misc. Changes
+-------------
+
+Use `:echo $VIMRUNTIME` to figure out where the runtime files are. Then, edit the 
+`$VIMRUNTIME/filetype.vim` file to set `*.C` files to be "C++" regardless of whether
+we're ignoring case.
+
+    " C++
+    au BufNewFile,BufRead *.cxx,*.c++,*.hh,*.hxx,*.hpp,*.ipp,*.moc,*.tcc,*.inl,*.C setf cpp
+    if has("fname_case")
+      au BufNewFile,BufRead *.C,*.H setf cpp
+    endif
+
 Other Usage Notes
 -----------------
 
