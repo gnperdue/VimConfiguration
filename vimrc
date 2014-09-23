@@ -44,6 +44,8 @@ autocmd FileType asciidoc set commentstring=//\ %s
 autocmd FileType markdown set commentstring=<!--\ %s-->
 " Cpp (gets reset after looking at a markdown file)
 autocmd FileType cpp set commentstring=//\ %s
+" SQL
+autocmd FileType sql set commentstring=--\ %s
 
 
 " Use UNIX (\n) line endings.
