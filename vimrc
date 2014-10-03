@@ -247,6 +247,13 @@ augroup filetype_javascript
   autocmd FileType javascript noremap <buffer>  <c-j> :call JsBeautify()<cr>
 augroup END
 
+" SQL
+" Read
+"   :h sql.txt
+"   :h sql-completion
+let g:sql_type_default = 'mysql'
+" TODO - The dbext plugin must be loaded for dynamic SQL completion
+" TODO - Read tutorial for dbext, sqlcomplete (:h sql.txt)
 
 """""""""""""""""""""""""""""
 " Folding
