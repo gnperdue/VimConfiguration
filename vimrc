@@ -209,24 +209,18 @@ augroup filetype_html
 augroup END
 
 " Python
-"  Assume python-mode (:help pymode.txt)
 augroup filetype_python
   autocmd!
-  " nnoremap <leader>p3 :execute "let g:pymode_python = 'python3'"<cr>
-  " let g:pymode_python = 'python3'
-  " most of this is handled by python-mode...
-  " autocmd FileType python setlocal tabstop=4
-  " autocmd FileType python setlocal softtabstop=4
-  " autocmd FileType python setlocal shiftwidth=4
-  " autocmd FileType python setlocal expandtab
+  autocmd FileType python setlocal tabstop=4
+  autocmd FileType python setlocal softtabstop=4
+  autocmd FileType python setlocal shiftwidth=4
+  autocmd FileType python setlocal expandtab
   " Display tabs at the beginning of a line in Python mode as bad.
-  " autocmd FileType python match BadWhitespace /^\t\+/ 
+  autocmd FileType python match BadWhitespace /^\t\+/ 
   " Make trailing whitespace be flagged as bad in Python
-  " autocmd FileType python match BadWhitespace /\s\+$/
-  " Wrap after 79 characters - needed? isn't clear what python-mode does...
+  autocmd FileType python match BadWhitespace /\s\+$/
   autocmd FileType python setlocal textwidth=79
   autocmd FileType python colorscheme anotherdark
-  " let g:pymode_rope = 0
 augroup END
 
 augroup filetype_cpp
@@ -287,8 +281,7 @@ augroup END
 
 """""""""""""""""""""""""""""
 " syntastic
-" Python handled by python-mode, no?
-" let g:syntastic_python_checkers=['flake8']
+let g:syntastic_python_checkers=['flake8']
 " let g:syntastic_cpp_compiler = 'g++-4.2'
 let g:syntastic_cpp_checkers=['cpplint','cppcheck','gcc']
 " let g:syntastic_html_checkers=['jshint','tidy','validator','w3']
