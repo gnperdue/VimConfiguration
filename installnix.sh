@@ -29,8 +29,8 @@ if [ -e $HOME/.vim ]; then
 fi
 
 echo "Linking vimrc file and vim/ directory..."
-ln -s ${PWD}/vimrc $HOME/.vimrc
-ln -s ${PWD}/vim $HOME/.vim
+ln -sf ${PWD}/vimrc $HOME/.vimrc
+ln -sf ${PWD}/vim $HOME/.vim
 
 if [[ $# > 0 ]]; then
   echo "Overriding vimrc installation with essential.vim only!"

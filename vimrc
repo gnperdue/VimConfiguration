@@ -293,6 +293,7 @@ augroup END
 let g:syntastic_cpp_checkers=['cpplint','cppcheck','gcc']
 " let g:syntastic_html_checkers=['jshint','tidy','validator','w3']
 let g:syntastic_html_checkers=['jshint']
+let g:syntastic_cpp_config_file="~/.syntastic_cpp_config"
 
 " just to keep things tidy...
 noh
