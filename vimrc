@@ -208,6 +208,13 @@ augroup filetype_html
   autocmd FileType html colorscheme af
 augroup END
 
+" sh
+augroup filetype_sh
+  autocmd!
+  set tabstop=4
+  set shiftwidth=4
+augroup END
+
 " Python
 augroup filetype_python
   autocmd!
