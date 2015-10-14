@@ -156,6 +156,13 @@ function! s:QuickfixToggle()
   endif
 endfunction
 
+" remove trailing spaces
+function TrimWhiteSpace()
+  %s/\s*$//
+endfunction
+
+nnoremap <leader>wsp :call TrimWhiteSpace()<cr>
+
 """""""""""""""""""""""""""""
 " regex's
 " note: nnoremap interprets <cr> before exe does, so we need 
