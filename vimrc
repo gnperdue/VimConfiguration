@@ -254,6 +254,8 @@ augroup filetype_javascript
   autocmd FileType javascript noremap <buffer>  <c-j> :call JsBeautify()<cr>
 augroup END
 
+autocmd filetype crontab setlocal nobackup nowritebackup
+
 " SQL
 " Read
 "   :h sql.txt
