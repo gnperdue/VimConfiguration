@@ -1,6 +1,12 @@
 Initial Set-up
 --------------
 
+Installation:
+
+1. Do the submodule checkout (go into `vim` and type `git submodule update 
+--init --recursive`).
+2. Run the `installnix.sh` script.
+
 Right now this is more of a "log of how I set this up" rather than a 
 proper "readme" for users who check this module out to play with.
 
@@ -29,7 +35,7 @@ Next I manually created `vim/bundle` and added submodules. In the top level:
 
 Note, when checking this module out, the submodules will initially be empty (the 
 directories will be present, but they will hold no content). To fill them, go to the 
-top level:
+top level (the `vim` directory):
 
 * git submodule update --init --recursive
 
