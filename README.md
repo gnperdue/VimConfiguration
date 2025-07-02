@@ -1,3 +1,14 @@
+Update as of 2025-07-02
+-----------------------
+
+NOBODY should use this repo and expect good things out of the box, LOL.
+
+All of the stuff below is more than 10 years old. For simplicity, I have just
+frozen everything and stuck into this repo directly (and gotten rid of all
+the git submodule nonsense). If I start using Vim a lot again, this will
+all need to be reworked.
+
+
 Initial Set-up
 --------------
 
