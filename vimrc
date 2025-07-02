@@ -5,6 +5,7 @@
 "  For a deeper look at syntax -  :syntax list
 "  Also                        -  :verbose set ft?
 "  ...and                      -  :e $VIMRUNTIMWE/ftplugin
+set nocompatible
 
 filetype plugin indent on
 syntax on
@@ -21,7 +22,9 @@ call pathogen#helptags()
 " dark only
 " colorscheme evening
 " colorscheme solarized
-colorscheme af
+if exists(':colorscheme af')
+  colorscheme af
+endif
 
 " Use when displaying bad whitespace
 highlight BadWhitespace ctermbg=gray
@@ -299,7 +302,8 @@ augroup END
 " Python handled by python-mode, no?
 " let g:syntastic_python_checkers=['flake8']
 " let g:syntastic_cpp_compiler = 'g++-4.2'
-let g:syntastic_cpp_checkers=['cpplint','cppcheck','gcc']
+" let g:syntastic_cpp_checkers=['cpplint','cppcheck','gcc']
+let g:syntastic_cpp_checkers=['cppcheck']
 " let g:syntastic_html_checkers=['jshint','tidy','validator','w3']
 let g:syntastic_html_checkers=['jshint']
 
